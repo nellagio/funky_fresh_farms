@@ -1,0 +1,58 @@
+html {	
+    box-sizing: border-box;	
+}	
+*, *:before, *:after {	
+    box-sizing: inherit;	
+}	
+
+body {
+    background-color: teal;
+}
+
+#barn_photo {
+    margin-top: 10px;
+    height: 175px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+#main_div {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+@media (min-width: 768px) {	
+    #main_div {	
+        margin-top: 10px;
+        padding-left: 60px;	
+        padding-right: 60px;	
+    }
+    #barn_photo {
+        margin-top: 30px;
+        height: 300px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }		
+    .social_links {	
+        transition: transform .2s;	
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-left: 15px;
+    }	
+    	
+    .social_links:hover {	
+        transform: scale(1.5);	
+    }	
+}	
+@media (min-width: 1024px) {
+    #barn_photo {
+        margin-top: 30px;
+        height: 500px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+@media (min-width: 1600px) {
