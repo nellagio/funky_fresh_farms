@@ -1,9 +1,9 @@
-/* overall */
 html {	
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 25px;	
-}	
+    font-family: Helvetica;
+    font-size: 20px;	
+}
+
 *, *:before, *:after {	
     box-sizing: inherit;	
 }	
@@ -11,40 +11,33 @@ html {
 body {
     background-color: teal;
 }
-/* overall end */
 
-/* mobile view <768px */
-#barn_photo {
-    margin-top: 10px;
-    height: 175px;
-    width: 100%;
+#main_div {
     padding-left: 5px;
     padding-right: 5px;
-
-}
-#main_div {
-    padding: 10px;
-    text-align: center;
 }
 
-/* navbar */
+#barn_photo {
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 10em;
+    width: 100%;
+}
+
+
 #navbar {
     border-radius: 5px;
-    height: 55px;
+    height: 2em;
     padding-left: 5px;
     padding-right: 5px;
     background-color: rgba(245, 245, 245, 0.418);
-    border-width:1px;  
-    border-style:inset;
 }
 
-/* unvisited link */
 #navbar a:link {
     color:black;
     text-decoration: none;
   }
   
-  /* visited link */
   #navbar a:visited {
     color: rgba(0, 0, 0, 0.432);
     text-decoration: none;
@@ -52,26 +45,26 @@ body {
   
 ul {
     font-weight: bold;
-    font-size: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    font-size: 20px;
     list-style-type: none;
-    margin-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
-li {
-    display: flex;
+
+.social_links {	
+    transition: transform .2s;	
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 15px;
+}	
     
+.social_links:hover {	
+    transform: scale(1.5);	
 }
-/* navbar end */
-
-
-
-
-
 
 
 
@@ -96,78 +89,14 @@ li {
         padding-right: 30px;	
     }
     #barn_photo {
-        margin-top: 30px;
-        height: 300px;
-        padding-left: 20px;
-        padding-right: 20px;
+        height: 10em;
+        width: 100%;
     }		
-    .social_links {	
-        transition: transform .2s;	
-        margin: 0 auto;
-        margin-top: 15px;
-        margin-left: 15px;
-    }	
-    	
-    .social_links:hover {	
-        transform: scale(1.5);	
-    }	
+   	
 
-    #navbar {
-        background-color: rgba(245, 245, 245, 0.418);
-        margin-top: 20px;
-        padding-left: 85px;
-        padding-right: 85px;
-    }
-    
-    /* unvisited link */
-    #navbar a:link {
-    color:black;
-    text-decoration: none;
-    }
-      /* visited link */
-  #navbar a:visited {
-    color: black;
-    text-decoration: none;
-  }
-  
-  /* mouse over link */
-  #navbar a:hover {
-    display: flex;
-    color: rgb(50, 136, 0);
-    text-decoration-style: wavy;
-    flex-grow: 1;
-  }
-  
-  /* selected link */
-  #navbar a:active {
-    color: blue;
-    text-decoration: wavy;
-  }
 
-ul {
-    font-weight: bold;
-    font-size: 25px;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin-top: 10px;
-    padding-left: 5px;
-  }
-/* navbar end */
-    #barn_photo {
-        margin-top: 30px;
-        height: 400px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-  
+
 }
-
-
-
-
-
-
 /* Up is 768 */
 
 /* Down is laptop */
@@ -181,11 +110,16 @@ ul {
 
 @media (min-width: 1024px) {
     #main_div {	
-        margin-top: 10px;
-        padding-left:  10px;	
-        padding-right: 10px;	
+        margin-top: 20px;
+        padding-left:  150px;	
+        padding-right: 150px;	
     }
-    
+    #barn_photo {
+        height: 20em;
+        width: 100%;
+
+    }
+}
   
 }
 
@@ -201,7 +135,7 @@ ul {
 
 /* Up is laptop */
 
-/* Down is widescreen */
+/* Down is large screen */
 
 
 
@@ -212,18 +146,44 @@ ul {
 
 
 
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
 
     #main_div {	
-        margin-top: 10px;
-        padding-left: 150px;	
-        padding-right: 150px;	
+        margin-top: 20px;
+        padding-left: 200px;	
+        padding-right: 200px;	
     }
 
     #barn_photo {
-        margin-top: 30px;
-        height: 750px;
-        padding-left: 15px;
-        padding-right: 15px;
+        height: 1em;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* Up is large screen */
+
+/* Down is 4k */
+
+
+
+
+
+
+@media (min-width: 2560px) {
+
+    #main_div {	
+        margin-top: 20px;
+        padding-left: 350px;	
+        padding-right: 350px;	
+    }
+
+    #barn_photo {
+        height: 28em;
+        width: 100%;
     }
 }
