@@ -1,5 +1,8 @@
+/* overall */
 html {	
-    box-sizing: border-box;	
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;	
 }	
 *, *:before, *:after {	
     box-sizing: inherit;	
@@ -8,7 +11,9 @@ html {
 body {
     background-color: teal;
 }
+/* overall end */
 
+/* mobile view <768px */
 #barn_photo {
     margin-top: 10px;
     height: 175px;
@@ -22,7 +27,48 @@ body {
     text-align: center;
 }
 
+/* navbar */
+#navbar {
+    border-width:5px;  
+    border-style:outset;
+}
 
+/* unvisited link */
+#navbar a:link {
+    color:black;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  #navbar a:visited {
+    color: green;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  #navbar a:hover {
+    display: flex;
+    color: rgb(132, 255, 60);
+    text-decoration: underline;
+    flex-grow: 1;
+  }
+  
+  /* selected link */
+  #navbar a:active {
+    color: blue;
+    text-decoration: underline;
+  }
+
+ul {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 5px;
+  }
+/* navbar end */
 
 @media (min-width: 768px) {	
     #main_div {	
@@ -46,13 +92,56 @@ body {
     .social_links:hover {	
         transform: scale(1.5);	
     }	
+
+    /* unvisited link */
+#navbar a:link {
+    color:black;
+    text-decoration: none;
+  }
+  
 }	
 @media (min-width: 1024px) {
+
+    #navbar {
+        margin-top: 30px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    /* visited link */
+  #navbar a:visited {
+    color: green;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  #navbar a:hover {
+    display: flex;
+    color: rgb(132, 255, 60);
+    text-decoration: underline;
+    flex-grow: 1;
+  }
+  
+  /* selected link */
+  #navbar a:active {
+    color: blue;
+    text-decoration: underline;
+  }
+
+ul {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 5px;
+  }
+/* navbar end */
     #barn_photo {
         margin-top: 30px;
-        height: 500px;
-        padding-left: 50px;
-        padding-right: 50px;
+        height: 550px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
 @media (min-width: 1600px) {
