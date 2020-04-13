@@ -2,7 +2,7 @@
 html {	
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 10px;	
+    font-size: 25px;	
 }	
 *, *:before, *:after {	
     box-sizing: inherit;	
@@ -29,8 +29,13 @@ body {
 
 /* navbar */
 #navbar {
-    border-width:5px;  
-    border-style:outset;
+    border-radius: 5px;
+    height: 55px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(245, 245, 245, 0.418);
+    border-width:1px;  
+    border-style:inset;
 }
 
 /* unvisited link */
@@ -41,46 +46,60 @@ body {
   
   /* visited link */
   #navbar a:visited {
-    color: green;
+    color: rgba(0, 0, 0, 0.432);
     text-decoration: none;
   }
   
-  /* mouse over link */
-  #navbar a:hover {
-    display: flex;
-    color: rgb(132, 255, 60);
-    text-decoration: underline;
-    flex-grow: 1;
-  }
-  
-  /* selected link */
-  #navbar a:active {
-    color: blue;
-    text-decoration: underline;
-  }
-
 ul {
     font-weight: bold;
     font-size: 25px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     list-style-type: none;
     margin-top: 10px;
     padding-left: 5px;
+    padding-right: 5px;
   }
+
+li {
+    display: flex;
+    
+}
 /* navbar end */
+
+
+
+
+
+
+
+
+/* Up is mobile */
+
+/* Down is 768 */
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {	
     #main_div {	
-        margin-top: 10px;
-        padding-left: 60px;	
-        padding-right: 60px;	
+        padding-left: 30px;	
+        padding-right: 30px;	
     }
     #barn_photo {
         margin-top: 30px;
         height: 300px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
     }		
     .social_links {	
         transition: transform .2s;	
@@ -93,38 +112,36 @@ ul {
         transform: scale(1.5);	
     }	
 
+    #navbar {
+        background-color: rgba(245, 245, 245, 0.418);
+        margin-top: 20px;
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    
     /* unvisited link */
-#navbar a:link {
+    #navbar a:link {
     color:black;
     text-decoration: none;
-  }
-  
-}	
-@media (min-width: 1024px) {
-
-    #navbar {
-        margin-top: 30px;
-        padding-left: 150px;
-        padding-right: 150px;
     }
-    /* visited link */
+      /* visited link */
   #navbar a:visited {
-    color: green;
+    color: black;
     text-decoration: none;
   }
   
   /* mouse over link */
   #navbar a:hover {
     display: flex;
-    color: rgb(132, 255, 60);
-    text-decoration: underline;
+    color: rgb(50, 136, 0);
+    text-decoration-style: wavy;
     flex-grow: 1;
   }
   
   /* selected link */
   #navbar a:active {
     color: blue;
-    text-decoration: underline;
+    text-decoration: wavy;
   }
 
 ul {
@@ -139,9 +156,74 @@ ul {
 /* navbar end */
     #barn_photo {
         margin-top: 30px;
-        height: 550px;
-        padding-left: 150px;
-        padding-right: 150px;
+        height: 400px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
+  
+}
+
+
+
+
+
+
+/* Up is 768 */
+
+/* Down is laptop */
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    #main_div {	
+        margin-top: 10px;
+        padding-left:  10px;	
+        padding-right: 10px;	
+    }
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Up is laptop */
+
+/* Down is widescreen */
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1600px) {
+
+    #main_div {	
+        margin-top: 10px;
+        padding-left: 150px;	
+        padding-right: 150px;	
+    }
+
+    #barn_photo {
+        margin-top: 30px;
+        height: 750px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
